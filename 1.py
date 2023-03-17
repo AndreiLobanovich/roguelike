@@ -102,8 +102,8 @@ def generate(width, height, verbose=True):
   return lines
 
 if __name__ == '__main__':
-  width = 51
-  height = 31
+  width = 23
+  height = 23
   args = sys.argv[1:]
   if len(args) >= 1:
     width = int(args[0])

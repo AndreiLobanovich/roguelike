@@ -6,6 +6,7 @@ class Character:
     def __init__(self, x, y):
         self.x = x
         self.y = y
+        self.hp = 3
         self.lastDirection = "none"
         self.shift = [x - 2, y - 2]
         i, j = playerTile["pos"]
@@ -31,3 +32,7 @@ class Character:
     def move(self, direction):
         self.x, self.y = self.x + directions[direction][0], self.y + directions[direction][1]
         self.lastDirection = direction
+
+    def setPosition(self, point):
+        self.x, self.y = point
+        self.lastDirection = 'none'

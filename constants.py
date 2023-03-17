@@ -1,5 +1,5 @@
 TILE_SIZE = 16
-SCALE_FACTOR = 5
+SCALE_FACTOR = 8
 
 directions = {
     "up": (0, -1),
@@ -18,7 +18,7 @@ tilesPaths = {
     },
     "floor": {
         "path": ["tiles/Floor.png"],
-        "pos": (2, 8)
+        "pos": (1, 13)
     },
     "trap": {
         "path": ["tiles/Trap0.png", "tiles/Trap1.png"],
@@ -26,21 +26,23 @@ tilesPaths = {
     },
     "wall": {
         "path": ["tiles/Wall.png"],
-        "pos": (2, 8)
+        "pos": (1, 6)
+    },
+    "door": {
+        "path": ["tiles/Door0.png"],
+        "pos": (0, 5)
     }
 }
 
 playerTile = {
     "path": ["tiles/Player0.png", "tiles/Player1.png"],
-    "pos": (2, 1)
+    "pos": (0, 0)
 }
 
 mapSymbols = {
     "#": "wall",
     " ": "floor",
     "t": "trap",
-    "c": "chest",
-    "o": "floor",
-    "x": "floor",
-    "e": "floor"
+    "o": "door",
+    "x": "door",
 }
